@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: 100%;
+}
+
+.card {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(200, 29, 223, 0.87);
+  color: beige;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 180px 10px 10px 30px;
+}
+
+mat-card-title {
+  text-align: center;
+}
+
+.colorButton {
+  background-color: #2e50e7d7;
+  color: white;
+}
+
+.coloField {
+  color: #3d3838;
+}
+
+.bgcomponent {
+  background-image: url("../../../assets/img/ng4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+}
+
+.mat-form-field {
+  margin-right: 8px;
+}
+.neon {
+  color: #fff;
+
+  text-shadow: 0 0 1px rgba(0, 178, 255, 1), 0 0 3px rgba(0, 178, 255, 1),
+    0 0 6px rgba(0, 178, 255, 1), 0 0 9px rgba(38, 104, 127, 1),
+    0 0 18px rgba(38, 104, 127, 1), 0 0 36px rgba(38, 104, 127, 1),
+    0 0 72px rgba(38, 104, 127, 1), 0 0 144px rgba(38, 104, 127, 1),
+    0 0 288px rgba(38, 104, 127, 1);
+}
+.btnneon {
+  box-shadow: 0 0 50px rgb(68, 155, 255);
+}
+
+.colorButton:hover {
+  background-color: #002fff;
+  box-shadow: 0 0 60px rgb(68, 155, 255);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}

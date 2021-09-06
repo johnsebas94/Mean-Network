@@ -1,0 +1,77 @@
+<div class="bgComponent">
+  <div class="accordion_display">
+    <div class="accordion_size">
+      <mat-accordion multi="true" *ngIf="postData.length">
+        <mat-expansion-panel
+          class="panel"
+          *ngFor="let post of postData"
+          hideToggle="false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <span>{{ post.text }}</span>
+              <span class="spacer"></span>
+              <button
+                class="btnPublic"
+                *ngIf="post.postStatus == 'public'"
+                mat-raised-button
+              >
+                {{ post.postStatus }}
+              </button>
+              <button
+                class="btnPrivate"
+                *ngIf="post.postStatus == 'private'"
+                mat-raised-button
+              >
+                {{ post.postStatus }}
+              </button>
+              <button
+                class="btnFriends"
+                *ngIf="post.postStatus == 'only-friends'"
+                mat-raised-button
+              >
+                {{ post.postStatus }}
+              </button>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-panel-description>
+            <span> {{ post.hashtag }}</span>
+          </mat-panel-description>
+          <!--    <mat-panel-description>
+              {{ post.description }}
+            </mat-panel-description>-->
+          <mat-panel-description>
+            <img class="card-img-top image_center" src="{{ post.imageUrl }}" />
+          </mat-panel-description>
+          <mat-action-row>
+            <button
+              class="btnSelectPublic"
+              mat-button
+              (click)="updatePost(post, 'public')"
+            >
+              Public
+            </button>
+            <button
+              class="btnSelectPrivate"
+              mat-button
+              (click)="updatePost(post, 'private')"
+            >
+              Private
+            </button>
+            <button
+              class="btnSelectFriends"
+              mat-button
+              (click)="updatePost(post, 'only-friends')"
+            >
+              Only friends
+            </button>
+            <span class="spacer"></span>
+            <mat-icon color="primary" (click)="deletePost(post)"
+              >delete</mat-icon
+            >
+          </mat-action-row>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+</div>

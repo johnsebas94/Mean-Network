@@ -1,0 +1,33 @@
+.headerSpacer {
+  flex: 1 1 auto;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bgHeader {
+  background-color: #000000;
+}
+.neon {
+  color: #fff;
+
+  text-shadow: 0 0 1px rgba(0, 178, 255, 1), 0 0 3px rgba(0, 178, 255, 1),
+    0 0 6px rgba(0, 178, 255, 1), 0 0 9px rgba(38, 104, 127, 1),
+    0 0 18px rgba(38, 104, 127, 1), 0 0 136px rgba(38, 104, 127, 1),
+    0 0 172px rgba(38, 104, 127, 1), 0 0 144px rgba(38, 104, 127, 1),
+    0 0 288px rgba(38, 104, 127, 1);
+}
+.neon :hover {
+  color: #e204f7;
+  text-shadow: 0 0 1px rgb(255, 0, 170), 0 0 3px rgba(255, 0, 170),
+    0 0 6px rgba(255, 0, 170), 0 0 9px rgb(153, 84, 132),
+    0 0 18px rgba(153, 84, 132), 0 0 36px rgba(153, 84, 132),
+    0 0 72px rgba(153, 84, 132), 0 0 144px rgba(153, 84, 132),
+    0 0 288px rgba(153, 84, 132);
+}

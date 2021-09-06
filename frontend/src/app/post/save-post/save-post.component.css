@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: 100%;
+  box-shadow: 0 0 20px rgb(68, 255, 68);
+  background-color: rgb(188, 255, 5);
+}
+
+.card {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 50px rgb(68, 155, 255);
+  background-color: rgb(52, 96, 216);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: silver;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 16px 0px;
+}
+
+mat-card-title {
+  text-align: center;
+}
+
+.colorButton {
+  background-color: #3d3838;
+  color: white;
+}
+
+.coloField {
+  color: #3d3838;
+}
+
+.bgcomponent {
+  background-image: url("../../../assets/img/fg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+}
+
+.mat-form-field {
+  margin-right: 8px;
+}
+.btnneon {
+  box-shadow: 0 0 50px rgb(68, 155, 255);
+}

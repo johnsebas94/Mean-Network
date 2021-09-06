@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "6d683c38-6834-4953-b496-fcb59e8662a6",
+		"name": "MEAN Post Network",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registro",
+			"item": [
+				{
+					"name": "Usuario 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sebastian\",\r\n    \"email\": \"Sebastian26@gmail.com\",\r\n    \"password\": \"abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/api/user/registerUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"user",
+								"registerUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nicolas\",\r\n    \"email\": \"Nicolas09@gmail.com\",\r\n    \"password\": \"abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/api/user/registerUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"user",
+								"registerUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"Sebastian26@gmail.com\",\r\n    \"password\": \"abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SavePost",
+			"item": [
+				{
+					"name": "Create Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTJlNGYxMDM1OGJjNTczZjY3NmM5NzAiLCJuYW1lIjoiU2ViYXN0aWFuIiwiaWF0IjoxNjMwNDI1MTE2fQ.4d0DIxHOVbYDBX8S8ewNc7w-PsLVbfGYu9ttmiZ6LRk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\": \"Con el parche\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/api/post/savePost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"post",
+								"savePost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Created Post with HashTag",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTJlNGYzNzM1OGJjNTczZjY3NmM5NzMiLCJuYW1lIjoiTmljb2xhcyIsImlhdCI6MTYzMDQyNTQyMX0.QiZXA8arsx-u8cIQf3a_YsMiYDPTFH79MDgcouYeA1Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\": \"jugando futbol\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/api/post/savePost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"post",
+								"savePost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Image and HashTag",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTJlNGYxMDM1OGJjNTczZjY3NmM5NzAiLCJuYW1lIjoiU2ViYXN0aWFuIiwiaWF0IjoxNjMwNjQ1MTA4fQ._reLsHBPvIrd3k6h1GOYMJ2Mdy5BUEj-6k3RVYMuICg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "text",
+									"value": "\"prueba con imagen2\"",
+									"type": "text"
+								},
+								{
+									"key": "hashtag",
+									"value": "\"#nomas2\"",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/admjtibaquirap/Downloads/fedsoft.png",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3003/api/post/savePost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"post",
+								"savePost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTJlNGYzNzM1OGJjNTczZjY3NmM5NzMiLCJuYW1lIjoiTmljb2xhcyIsImlhdCI6MTYzMDQyNTQyMX0.QiZXA8arsx-u8cIQf3a_YsMiYDPTFH79MDgcouYeA1Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/api/post/listPost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"post",
+								"listPost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTJlNGYzNzM1OGJjNTczZjY3NmM5NzMiLCJuYW1lIjoiTmljb2xhcyIsImlhdCI6MTYzMDQyNTQyMX0.QiZXA8arsx-u8cIQf3a_YsMiYDPTFH79MDgcouYeA1Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/api/post/deletePost/612e507f358bc573f676c97b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"post",
+								"deletePost",
+								"612e507f358bc573f676c97b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

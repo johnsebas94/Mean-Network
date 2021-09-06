@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: 100%;
+}
+
+.card {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(75, 218, 187, 0.808);
+  color: rgb(160, 43, 105);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 16px 0px;
+}
+
+mat-card-title {
+  text-align: center;
+}
+
+.colorButton {
+  background-color: #414085e1;
+  color: white;
+}
+
+.coloField {
+  color: #3d3369;
+}
+body {
+  height: 100%;
+}
+
+.bgcomponent {
+  background-image: url("../../../assets/img/ng6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+}
+.neon {
+  color: #fff;
+  text-shadow: 0 0 1px rgb(255, 0, 170), 0 0 3px rgba(255, 0, 170),
+    0 0 6px rgba(255, 0, 170), 0 0 9px rgb(153, 84, 132),
+    0 0 18px rgba(153, 84, 132), 0 0 36px rgba(153, 84, 132),
+    0 0 72px rgba(153, 84, 132), 0 0 144px rgba(153, 84, 132),
+    0 0 288px rgba(153, 84, 132);
+}
+.neonazul {
+  color: #fff;
+
+  text-shadow: 0 0 1px rgba(0, 178, 255, 1), 0 0 3px rgba(0, 178, 255, 1),
+    0 0 6px rgba(0, 178, 255, 1), 0 0 9px rgba(38, 104, 127, 1),
+    0 0 18px rgba(38, 104, 127, 1), 0 0 36px rgba(38, 104, 127, 1),
+    0 0 72px rgba(38, 104, 127, 1), 0 0 144px rgba(38, 104, 127, 1),
+    0 0 288px rgba(38, 104, 127, 1);
+}
+
+.colorButton:hover {
+  background-color: #e610e6f1;
+  box-shadow: 0 0 50px rgb(247, 23, 255);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
